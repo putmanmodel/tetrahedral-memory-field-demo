@@ -2,6 +2,8 @@
 
 Tetrahedral Memory Field is a browser-based, deterministic 3D visualization of a tiered memory-like dynamical system inside a simplex-bounded tetrahedral volume. It renders a live point cloud where nodes consolidate across tiers while a pre-clamp out-of-bounds (OOB) signal is monitored.
 
+Live demo: https://putmanmodel.github.io/tetrahedral-memory-field-demo/
+
 ## Related paper
 
 - Zenodo DOI: `10.5281/zenodo.18701137`  
