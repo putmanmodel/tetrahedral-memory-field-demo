@@ -37,8 +37,7 @@ All movement is constrained to a tetrahedral volume using barycentric coordinate
 - Parameter sliders for consolidation and motion tuning
 - Presets for different memory and breach behaviors
 - OOB monitoring with hysteresis and cooldown anti-chatter logic
-- Demo Mode for cleaner presentations
-- Export to PNG, including a clean export mode that hides UI overlays
+- Export to PNG (canvas snapshot)
 
 ## Screenshots
 
@@ -48,7 +47,7 @@ All movement is constrained to a tetrahedral volume using barycentric coordinate
 ### Hard Break (HARD episodes)
 ![Hard Break](screenshots/hard-break.png)
 
-Use **Demo Mode** + **Export clean (no UI)** for publication-ready PNGs.
+Use **Export PNG** to generate consistent images for documentation.
 
 ## Presets
 
@@ -61,7 +60,7 @@ The UI includes these preset profiles:
 - `Soft Breach (calm monitor)`: low-rate, mostly soft OOB behavior
 - `Hard Break (HARD episodes)`: clearer hard breach episodes with moderate event density
 
-Select a preset from the dropdown to apply it. Use `Re-apply preset` to reset + re-load the current preset.
+Presets apply immediately when selected. Use `Re-apply preset` to reset + re-load the current preset.
 
 Applying a preset:
 
@@ -79,15 +78,9 @@ Applying a preset:
 - `Reset View`: re-centers the camera
 - `Export PNG`: saves the current frame
 
-### Display / Export Controls
+### Export
 
-- `Demo Mode`:
-  - on by default
-  - hides the status log section, debug overlay, axes helper, and centroid marker
-  - keeps the main OOB summary visible for presentation use
-- `Export clean (no UI)`:
-  - when enabled, exporting temporarily hides the panel, axis note, and debug overlay
-  - useful for screenshots suitable for slides or sharing
+- `Export PNG`: saves a canvas snapshot of the current view
 
 ### Scene Controls
 
@@ -96,10 +89,8 @@ Applying a preset:
 
 ### Diagnostics
 
-Under the `Diagnostics` section:
-
-- `Log SOFT`: when enabled, soft OOB events are written to the status log
-- HARD events always log.
+- `Log SOFT`: when enabled, SOFT OOB events are written to the status log
+- `HARD` events always log
 
 ## OOB Monitor Readout
 
